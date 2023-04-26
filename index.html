@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>  
+    <section class="section-intro ">
+        <div class="container-intro">
+            <ion-icon name="close-outline" class="icon close"></ion-icon>
+            <h1 class="primary-title">BeatLabX</h1>
+            <p class="desc">
+                Welcome to BeatLabX, your portal to limitless drumming potential! With a wide selection of drum kits
+                including hip hop, 808, and more, you can unleash your creativity and create unique beats. <br><br> My future plans include 
+                features like beat recording, customizable drum kits, and an expanded genre library. <br><br> If you can make 
+                BeatLabX more instresting then get the code from below link fork it to your repo.
+                <a href="#"> <ion-icon name="logo-github"></ion-icon>Github</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="section-kits ">
+        <h2 class="primary-title">🥁Unleash Your Rhythm</h2>
+        <div class="container-kits">
+            <ion-icon name="close-outline" class="icon close-kit"></ion-icon>
+
+            <div class="kit active-kit">
+                <div class="img ">
+                    <img src="img/808.jpg" alt="drum kit image">
+                </div>
+                <span class="kit-name">808 Basic</span>
+            </div>
+
+            <div class="kit">
+                <div class="img">
+                    <img src="img/acoustic.jpg" alt="drum kit image">
+                </div>
+                <span class="kit-name">Acoustic</span>
+            </div>
+
+            <div class="kit">
+                <div class="img">
+                    <img src="img/hip hop.jpg" alt="drum kit image">
+                </div>
+                <span class="kit-name">Hip Hop</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <main>
+        <button class="change-kit" id="change-kit">Kits</button>
+        <section class="section-drums">
+            <div class="drum" id="drum_1"><span class="key">A</span></div>
+            <div class="drum" id="drum_2"><span class="key">S</span></div>
+            <div class="drum" id="drum_3"><span class="key">D</span></div>
+            <div class="drum" id="drum_4"><span class="key">&lAarr;</span></div>
+            <div class="drum" id="drum_5"><span class="key">&dArr;</span></div>
+            <div class="drum" id="drum_6"><span class="key">&rAarr;</span></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

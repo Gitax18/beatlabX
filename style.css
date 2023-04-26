@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Serif', serif;
+    /* height: 100%; */
+    
+    /* width: 100%; */
+}
+
+a{
+    display: inline-block;
+    text-align: center;
+    margin: 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-100%,0);
+}
+
+a:link,a:visited{
+    color: white;
+}
+
+ion-icon{
+    padding: 0 1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.section-intro,
+.section-kits{
+    padding: 3rem;
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1c1e;
+    position: absolute;
+    z-index: 20;
+}
+
+.icon{
+    /* display: none; */
+    height: 3rem;
+    width: 3rem;
+    margin: 3rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100rem;
+    margin:  auto;
+    color: white;
+}
+
+.primary-title{
+    font-size: 4.8rem;
+    text-align: center;
+    letter-spacing: -0.75px;
+    margin-bottom: 3rem;
+}
+
+.desc{
+    font-size: 1.8rem;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+
+/* ############################
+kit section
+###########################3 */
+.section-kits{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    z-index: 15;
+    
+}
+
+.container-kits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 120rem;
+    margin: 12.8rem auto;
+    overflow: hidden;
+}
+
+.kit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 35rem ;
+    width: 35rem;
+    cursor: pointer;
+}
+
+.img{
+    border-radius: 3rem;
+    overflow: hidden;
+    height: 30rem;
+    width: 30rem;
+}
+
+.kit img{
+    transition: all 250ms ease-in;
+    display: block;
+    width: 30rem;
+    height: 30rem;
+}
+
+.kit span{
+    font-size: 2.4rem;
+}
+
+.kit:hover img{
+    scale: 1.2;
+}
+
+.active-kit .img{
+    box-shadow: inset 0 0 0 15px red;
+    border: 10px solid red;
+}
+
+/* #########################
+    drum kit stylings
+########################### */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1b1c1e;
+}
+
+.change-kit{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 10;
+    display: inline-block;
+    color: #1b1c1e;
+    cursor: pointer;
+    padding: 0.4rem 2.4rem;
+    border-radius: 50rem;
+}
+
+.change-kit:active{
+    scale: 0.99;
+}
+
+.section-drums{
+    max-width: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: auto;
+}
+
+.drum{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 3rem;
+    transition: all 100ms ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.drum:nth-child(1){
+    background-color: #ffc074;
+    box-shadow: 0 0  25px 2px rgba(255, 192, 116, 0.5);
+}
+.drum:nth-child(2){
+    background-color: #f481a5;
+    box-shadow: 0 0  25px 2px rgba(244, 129, 165, 0.5);
+}
+.drum:nth-child(3){
+    background-color: #00d0ce;
+    box-shadow: 0 0  25px 2px rgb(0, 208, 206, 0.5);
+}
+.drum:nth-child(4){
+    background-color: #e096e3;
+    box-shadow: 0 0  25px 2px rgb(224, 150, 227, 0.5);
+}
+.drum:nth-child(5){
+    background-color: #c2ee7a   ;
+    box-shadow: 0 0  25px 2px rgb(194, 238, 122, 0.5);
+}
+.drum:nth-child(6){
+    background-color: #7099ea;
+    box-shadow: 0 0  25px 2px rgb(112, 153, 234, 0.5);
+}
+
+.drum:active{
+    scale: 0.99;
+}
+
