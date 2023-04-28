@@ -178,7 +178,6 @@ changeKit.addEventListener('click',()=>{
 })
 
 
-let choosenkit = basic808
 
 setInterval(()=>{
     if (kits[0].classList.contains('active-kit')){
